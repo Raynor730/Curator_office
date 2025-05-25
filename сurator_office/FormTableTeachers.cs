@@ -72,7 +72,7 @@ namespace сurator_office
             int id = 0;
 
             bool converted = Int32.TryParse(dataGridViewTeachers[0, index].Value.ToString(), out id);
-            if(!converted)
+            if (!converted)
             {
                 return;
             }
@@ -87,19 +87,56 @@ namespace сurator_office
 
             DialogResult result = formAddTeacher.ShowDialog(this);
 
-            if(result == DialogResult.Cancel)
+            if (result == DialogResult.Cancel)
             {
                 return;
             }
 
             teacher.Surname = formAddTeacher.textBoxSurname.Text;
-            teacher.Name =formAddTeacher.textBoxName.Text;
+            teacher.Name = formAddTeacher.textBoxName.Text;
             teacher.Patronymic = formAddTeacher.textBoxPatronymic.Text;
 
             db.Teachers.Update(teacher);
             db.SaveChanges();
 
             MessageBox.Show("Объект изменен");
+
+            this.dataGridViewTeachers.DataSource = this.db.Teachers.Local.OrderBy(o => o.Surname).ToList();
+        }
+
+        private void ButtonDelete_Click(object sender, EventArgs e)
+        {
+            if(dataGridViewTeachers.SelectedRows.Count == 0)
+            {
+                return;
+            }
+            DialogResult result = MessageBox.Show(
+                "Вы уверены, что хотите удалить объект?",
+                "",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if (result == DialogResult.No)
+            { 
+                return;
+            }
+
+            int index = dataGridViewTeachers.SelectedRows[0].Index;
+
+            int id = 0;
+
+            bool converted = Int32.TryParse(dataGridViewTeachers[0, index].Value.ToString(), out id);
+            if (!converted)
+            {
+                return;
+            }
+
+            Teacher teacher = db.Teachers.Find(id);
+
+            db.Teachers.Remove(teacher);
+            db.SaveChanges();
+
+            MessageBox.Show("Объект удален");
 
             this.dataGridViewTeachers.DataSource = this.db.Teachers.Local.OrderBy(o => o.Surname).ToList();
         }
