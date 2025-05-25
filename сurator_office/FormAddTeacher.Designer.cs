@@ -52,7 +52,7 @@
             panelBottom.Dock = DockStyle.Bottom;
             panelBottom.Location = new Point(0, 201);
             panelBottom.Name = "panelBottom";
-            panelBottom.Padding = new Padding(10, 10, 20, 10);
+            panelBottom.Padding = new Padding(10, 10, 25, 10);
             panelBottom.Size = new Size(584, 60);
             panelBottom.TabIndex = 1;
             // 
@@ -89,7 +89,7 @@
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 0);
             panelFill.Name = "panelFill";
-            panelFill.Padding = new Padding(10, 10, 20, 10);
+            panelFill.Padding = new Padding(10, 10, 25, 10);
             panelFill.Size = new Size(584, 201);
             panelFill.TabIndex = 0;
             // 
@@ -98,7 +98,7 @@
             textBoxPatronymic.Dock = DockStyle.Top;
             textBoxPatronymic.Location = new Point(10, 151);
             textBoxPatronymic.Name = "textBoxPatronymic";
-            textBoxPatronymic.Size = new Size(554, 33);
+            textBoxPatronymic.Size = new Size(549, 33);
             textBoxPatronymic.TabIndex = 5;
             // 
             // labelPatronymic
@@ -116,7 +116,7 @@
             textBoxName.Dock = DockStyle.Top;
             textBoxName.Location = new Point(10, 93);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(554, 33);
+            textBoxName.Size = new Size(549, 33);
             textBoxName.TabIndex = 3;
             textBoxName.Validating += textBoxName_Validating;
             // 
@@ -135,7 +135,7 @@
             textBoxSurname.Dock = DockStyle.Top;
             textBoxSurname.Location = new Point(10, 35);
             textBoxSurname.Name = "textBoxSurname";
-            textBoxSurname.Size = new Size(554, 33);
+            textBoxSurname.Size = new Size(549, 33);
             textBoxSurname.TabIndex = 1;
             textBoxSurname.Validating += textBoxSurname_Validating;
             // 
