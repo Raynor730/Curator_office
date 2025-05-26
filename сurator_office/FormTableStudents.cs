@@ -64,8 +64,22 @@ namespace сurator_office
             student.Surname = formAddStudent.textBoxSurname.Text;
             student.Name = formAddStudent.textBoxName.Text;
             student.Patronymic = formAddStudent.textBoxPatronymic.Text;
+            student.Birthday = DateOnly.FromDateTime(formAddStudent.dateTimePickerBirthday.Value);
+            student.Email = formAddStudent.textBoxEmail.Text;
+            student.ActualAddress = formAddStudent.textBoxActualAddress.Text;
+            student.IdGroup = (int)formAddStudent.numericUpDownGroup.Value;
+            student.Subgroup = (short)formAddStudent.numericUpDownSubgroup.Value;
+            student.IdRole = (short)formAddStudent.numericUpDownRoleInGroup.Value;
+            student.PhoneNumber = formAddStudent.textBoxPhoneNumber.Text;
+            student.FullAge = formAddStudent.checkBoxFullAge.Checked;
+            student.Excluded = formAddStudent.checkBoxExcluded.Checked;
 
+            db.Students.Add(student);
+            db.SaveChanges();
 
+            MessageBox.Show("Новый учитель добавлен");
+
+            this.dataGridViewStudents.DataSource = this.db.Students.Local.OrderBy(o => o.Surname).ToList();
         }
     }
 }

@@ -86,6 +86,7 @@
             // buttonSave
             // 
             buttonSave.AutoSize = true;
+            buttonSave.DialogResult = DialogResult.OK;
             buttonSave.Location = new Point(22, 16);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(115, 35);

@@ -85,7 +85,7 @@
             ButtonShowDisciplinesTeachers.AutoSize = true;
             ButtonShowDisciplinesTeachers.Location = new Point(13, 38);
             ButtonShowDisciplinesTeachers.Name = "ButtonShowDisciplinesTeachers";
-            ButtonShowDisciplinesTeachers.Size = new Size(295, 65);
+            ButtonShowDisciplinesTeachers.Size = new Size(295, 35);
             ButtonShowDisciplinesTeachers.TabIndex = 6;
             ButtonShowDisciplinesTeachers.Text = "Дисциплины у преподавателей";
             ButtonShowDisciplinesTeachers.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             ButtonShowInterimStatements.AutoSize = true;
             ButtonShowInterimStatements.Location = new Point(13, 109);
             ButtonShowInterimStatements.Name = "ButtonShowInterimStatements";
-            ButtonShowInterimStatements.Size = new Size(267, 65);
+            ButtonShowInterimStatements.Size = new Size(267, 35);
             ButtonShowInterimStatements.TabIndex = 8;
             ButtonShowInterimStatements.Text = "вид аттестации у предметов";
             ButtonShowInterimStatements.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             ButtonShowTypesIntermediateAttestation.AutoSize = true;
             ButtonShowTypesIntermediateAttestation.Location = new Point(13, 43);
             ButtonShowTypesIntermediateAttestation.Name = "ButtonShowTypesIntermediateAttestation";
-            ButtonShowTypesIntermediateAttestation.Size = new Size(315, 65);
+            ButtonShowTypesIntermediateAttestation.Size = new Size(315, 35);
             ButtonShowTypesIntermediateAttestation.TabIndex = 7;
             ButtonShowTypesIntermediateAttestation.Text = "Типы промежуточной аттестации";
             ButtonShowTypesIntermediateAttestation.UseVisualStyleBackColor = true;
