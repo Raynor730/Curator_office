@@ -137,6 +137,7 @@
             ButtonShowRolesInGroup.TabIndex = 5;
             ButtonShowRolesInGroup.Text = "Роли в группе";
             ButtonShowRolesInGroup.UseVisualStyleBackColor = true;
+            ButtonShowRolesInGroup.Click += ButtonShowRolesInGroup_Click;
             // 
             // ButtonShowGroups
             // 

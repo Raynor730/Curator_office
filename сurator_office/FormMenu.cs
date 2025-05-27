@@ -23,5 +23,11 @@ namespace сurator_office
             FormTableTeachers formTableTeachers = new FormTableTeachers();
             formTableTeachers.Show();
         }
+
+        private void ButtonShowRolesInGroup_Click(object sender, EventArgs e)
+        {
+            FormTableRolesInGroup formTableRolesInGroup = new FormTableRolesInGroup();
+            formTableRolesInGroup.Show();
+        }
     }
 }
