@@ -29,5 +29,11 @@ namespace сurator_office
             FormTableRolesInGroup formTableRolesInGroup = new FormTableRolesInGroup();
             formTableRolesInGroup.Show();
         }
+
+        private void ButtonShowGroups_Click(object sender, EventArgs e)
+        {
+            FormTableGroups formTableGroups = new FormTableGroups();
+            formTableGroups.Show();
+        }
     }
 }

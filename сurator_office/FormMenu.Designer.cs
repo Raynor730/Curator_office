@@ -148,6 +148,7 @@
             ButtonShowGroups.TabIndex = 2;
             ButtonShowGroups.Text = "Группы";
             ButtonShowGroups.UseVisualStyleBackColor = true;
+            ButtonShowGroups.Click += ButtonShowGroups_Click;
             // 
             // labelPanelLeft
             // 
