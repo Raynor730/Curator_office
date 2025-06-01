@@ -17,3 +17,4 @@ public partial class CurrentStatementsStudent
 
     public virtual Student IdStudentNavigation { get; set; } = null!;
 }
+//Добавлен бэкап базы данных в корневую папку приложения
