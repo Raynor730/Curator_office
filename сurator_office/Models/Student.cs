@@ -37,5 +37,5 @@ public partial class Student
 
     public virtual RolesInGroup IdRoleNavigation { get; set; } = null!;
 
-    public virtual ICollection<IntermediateAttestationStudetn> IntermediateAttestationStudetns { get; set; } = new List<IntermediateAttestationStudetn>();
+    public virtual ICollection<IntermediateAttestationStudent> IntermediateAttestationStudetns { get; set; } = new List<IntermediateAttestationStudent>();
 }

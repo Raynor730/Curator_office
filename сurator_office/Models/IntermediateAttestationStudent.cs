@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace сurator_office.Models;
 
-public partial class IntermediateAttestationStudetn
+public partial class IntermediateAttestationStudent
 {
     public int Id { get; set; }
 

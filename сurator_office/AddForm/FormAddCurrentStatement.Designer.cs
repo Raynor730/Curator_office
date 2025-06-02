@@ -1,6 +1,6 @@
-﻿namespace сurator_office
+﻿namespace сurator_office.AddForm
 {
-    partial class FormAddRolesInGroup
+    partial class FormAddCurrentStatement
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             panelBottom = new Panel();
             buttonCancel = new Button();
             buttonSave = new Button();
             panelFill = new Panel();
-            textBoxRole = new TextBox();
-            labelRole = new Label();
-            errorProvider = new ErrorProvider(components);
-            errorProvider1 = new ErrorProvider(components);
+            textBoxDisciplineName = new TextBox();
+            labelDisciplineName = new Label();
+            textBoxKode = new TextBox();
+            labelKode = new Label();
             panelBottom.SuspendLayout();
             panelFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // panelBottom
@@ -48,17 +45,17 @@
             panelBottom.Controls.Add(buttonCancel);
             panelBottom.Controls.Add(buttonSave);
             panelBottom.Dock = DockStyle.Bottom;
-            panelBottom.Location = new Point(0, 76);
+            panelBottom.Location = new Point(0, 501);
             panelBottom.Name = "panelBottom";
-            panelBottom.Padding = new Padding(10);
-            panelBottom.Size = new Size(484, 60);
-            panelBottom.TabIndex = 1;
+            panelBottom.Padding = new Padding(10, 10, 25, 10);
+            panelBottom.Size = new Size(984, 60);
+            panelBottom.TabIndex = 4;
             // 
             // buttonCancel
             // 
             buttonCancel.AutoSize = true;
             buttonCancel.DialogResult = DialogResult.Cancel;
-            buttonCancel.Location = new Point(133, 13);
+            buttonCancel.Location = new Point(141, 23);
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new Size(100, 35);
             buttonCancel.TabIndex = 1;
@@ -69,7 +66,7 @@
             // 
             buttonSave.AutoSize = true;
             buttonSave.DialogResult = DialogResult.OK;
-            buttonSave.Location = new Point(12, 12);
+            buttonSave.Location = new Point(20, 23);
             buttonSave.Name = "buttonSave";
             buttonSave.Size = new Size(115, 35);
             buttonSave.TabIndex = 0;
@@ -78,60 +75,70 @@
             // 
             // panelFill
             // 
-            panelFill.Controls.Add(textBoxRole);
-            panelFill.Controls.Add(labelRole);
+            panelFill.Controls.Add(textBoxDisciplineName);
+            panelFill.Controls.Add(labelDisciplineName);
+            panelFill.Controls.Add(textBoxKode);
+            panelFill.Controls.Add(labelKode);
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 0);
             panelFill.Name = "panelFill";
-            panelFill.Padding = new Padding(10);
-            panelFill.Size = new Size(484, 76);
-            panelFill.TabIndex = 2;
+            panelFill.Padding = new Padding(10, 10, 25, 10);
+            panelFill.Size = new Size(984, 501);
+            panelFill.TabIndex = 5;
             // 
-            // textBoxRole
+            // textBoxDisciplineName
             // 
-            textBoxRole.Dock = DockStyle.Top;
-            textBoxRole.Location = new Point(10, 35);
-            textBoxRole.Name = "textBoxRole";
-            textBoxRole.Size = new Size(464, 33);
-            textBoxRole.TabIndex = 1;
-            textBoxRole.Validating += textBoxRole_Validating;
+            textBoxDisciplineName.Dock = DockStyle.Top;
+            textBoxDisciplineName.Location = new Point(10, 93);
+            textBoxDisciplineName.Name = "textBoxDisciplineName";
+            textBoxDisciplineName.Size = new Size(949, 33);
+            textBoxDisciplineName.TabIndex = 3;
             // 
-            // labelRole
+            // labelDisciplineName
             // 
-            labelRole.AutoSize = true;
-            labelRole.Dock = DockStyle.Top;
-            labelRole.Location = new Point(10, 10);
-            labelRole.Name = "labelRole";
-            labelRole.Size = new Size(62, 25);
-            labelRole.TabIndex = 0;
-            labelRole.Text = "Роль*";
+            labelDisciplineName.AutoSize = true;
+            labelDisciplineName.Dock = DockStyle.Top;
+            labelDisciplineName.Location = new Point(10, 68);
+            labelDisciplineName.Name = "labelDisciplineName";
+            labelDisciplineName.Size = new Size(208, 25);
+            labelDisciplineName.TabIndex = 2;
+            labelDisciplineName.Text = "Название дисциплины";
             // 
-            // errorProvider
+            // textBoxKode
             // 
-            errorProvider.ContainerControl = this;
+            textBoxKode.Dock = DockStyle.Top;
+            textBoxKode.Location = new Point(10, 35);
+            textBoxKode.Name = "textBoxKode";
+            textBoxKode.Size = new Size(949, 33);
+            textBoxKode.TabIndex = 1;
             // 
-            // errorProvider1
+            // labelKode
             // 
-            errorProvider1.ContainerControl = this;
+            labelKode.AutoSize = true;
+            labelKode.Dock = DockStyle.Top;
+            labelKode.Location = new Point(10, 10);
+            labelKode.Name = "labelKode";
+            labelKode.Size = new Size(155, 25);
+            labelKode.TabIndex = 0;
+            labelKode.Text = "код дисциплины";
             // 
-            // FormAddRolesInGroup
+            // FormAddCurrentStatement
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(484, 136);
+            ClientSize = new Size(984, 561);
             Controls.Add(panelFill);
             Controls.Add(panelBottom);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Margin = new Padding(5);
-            Name = "FormAddRolesInGroup";
-            Text = "FormAddRolesInGroup";
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "FormAddCurrentStatement";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormAddCurrentStatement";
             panelBottom.ResumeLayout(false);
             panelBottom.PerformLayout();
             panelFill.ResumeLayout(false);
             panelFill.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
-            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
         }
 
@@ -141,9 +148,9 @@
         private Button buttonCancel;
         private Button buttonSave;
         private Panel panelFill;
-        protected internal TextBox textBoxRole;
-        private Label labelRole;
-        private ErrorProvider errorProvider;
-        private ErrorProvider errorProvider1;
+        protected internal TextBox textBoxDisciplineName;
+        private Label labelDisciplineName;
+        protected internal TextBox textBoxKode;
+        private Label labelKode;
     }
 }

@@ -164,6 +164,7 @@
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
             Name = "FormAddTeacher";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "добавление\\редактирование учителя";
             panelBottom.ResumeLayout(false);
             panelBottom.PerformLayout();

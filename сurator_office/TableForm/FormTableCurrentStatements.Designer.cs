@@ -1,6 +1,6 @@
-﻿namespace сurator_office
+﻿namespace сurator_office.TableForm
 {
-    partial class FormTableStudents
+    partial class FormTableCurrentStatements
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             buttonUpdate = new Button();
             buttonDelete = new Button();
             panelFill = new Panel();
-            dataGridViewStudents = new DataGridView();
+            dataGridViewCurrentStatements = new DataGridView();
             flowLayoutPanelTop.SuspendLayout();
             panelFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewStudents).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCurrentStatements).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanelTop
@@ -52,7 +52,7 @@
             flowLayoutPanelTop.Name = "flowLayoutPanelTop";
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(984, 61);
-            flowLayoutPanelTop.TabIndex = 0;
+            flowLayoutPanelTop.TabIndex = 4;
             // 
             // buttonAdd
             // 
@@ -63,7 +63,6 @@
             buttonAdd.TabIndex = 0;
             buttonAdd.Text = "Добавить";
             buttonAdd.UseVisualStyleBackColor = true;
-            buttonAdd.Click += ButtonAdd_Click;
             // 
             // buttonUpdate
             // 
@@ -87,28 +86,28 @@
             // 
             // panelFill
             // 
-            panelFill.Controls.Add(dataGridViewStudents);
+            panelFill.Controls.Add(dataGridViewCurrentStatements);
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 61);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
             panelFill.Size = new Size(984, 500);
-            panelFill.TabIndex = 1;
+            panelFill.TabIndex = 5;
             // 
-            // dataGridViewStudents
+            // dataGridViewCurrentStatements
             // 
-            dataGridViewStudents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewStudents.BackgroundColor = Color.White;
-            dataGridViewStudents.Dock = DockStyle.Fill;
-            dataGridViewStudents.Location = new Point(10, 10);
-            dataGridViewStudents.MultiSelect = false;
-            dataGridViewStudents.Name = "dataGridViewStudents";
-            dataGridViewStudents.ReadOnly = true;
-            dataGridViewStudents.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewStudents.Size = new Size(964, 480);
-            dataGridViewStudents.TabIndex = 0;
+            dataGridViewCurrentStatements.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewCurrentStatements.BackgroundColor = Color.White;
+            dataGridViewCurrentStatements.Dock = DockStyle.Fill;
+            dataGridViewCurrentStatements.Location = new Point(10, 10);
+            dataGridViewCurrentStatements.MultiSelect = false;
+            dataGridViewCurrentStatements.Name = "dataGridViewCurrentStatements";
+            dataGridViewCurrentStatements.ReadOnly = true;
+            dataGridViewCurrentStatements.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewCurrentStatements.Size = new Size(964, 480);
+            dataGridViewCurrentStatements.TabIndex = 0;
             // 
-            // FormTableStudents
+            // FormTableCurrentStatements
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -118,13 +117,13 @@
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
-            Name = "FormTableStudents";
+            Name = "FormTableCurrentStatements";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Список студентов";
+            Text = "FormTableCurrentStatements";
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             panelFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewStudents).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCurrentStatements).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,6 +135,6 @@
         private Button buttonUpdate;
         private Button buttonDelete;
         private Panel panelFill;
-        private DataGridView dataGridViewStudents;
+        private DataGridView dataGridViewCurrentStatements;
     }
 }

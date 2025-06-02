@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panelBottom = new Panel();
             buttonCancel = new Button();
             buttonSave = new Button();
@@ -42,10 +43,12 @@
             labelSpecializationKode = new Label();
             textBoxName = new TextBox();
             labelName = new Label();
+            errorProvider = new ErrorProvider(components);
             panelBottom.SuspendLayout();
             panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownYearOfGraduation).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownYearOfAdmission).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // panelBottom
@@ -108,6 +111,7 @@
             numericUpDownYearOfGraduation.Name = "numericUpDownYearOfGraduation";
             numericUpDownYearOfGraduation.Size = new Size(949, 33);
             numericUpDownYearOfGraduation.TabIndex = 9;
+            numericUpDownYearOfGraduation.Validating += numericUpDownYearOfGraduation_Validating;
             // 
             // labelYearOfGraduation
             // 
@@ -127,6 +131,7 @@
             numericUpDownYearOfAdmission.Name = "numericUpDownYearOfAdmission";
             numericUpDownYearOfAdmission.Size = new Size(949, 33);
             numericUpDownYearOfAdmission.TabIndex = 7;
+            numericUpDownYearOfAdmission.Validating += numericUpDownYearOfAdmission_Validating;
             // 
             // labelYearOfAdmission
             // 
@@ -145,6 +150,7 @@
             textBoxSpecializationName.Name = "textBoxSpecializationName";
             textBoxSpecializationName.Size = new Size(949, 33);
             textBoxSpecializationName.TabIndex = 5;
+            textBoxSpecializationName.Validating += textBoxSpecializationName_Validating;
             // 
             // labelSpecializationName
             // 
@@ -163,6 +169,7 @@
             textBoxSpecializationKode.Name = "textBoxSpecializationKode";
             textBoxSpecializationKode.Size = new Size(949, 33);
             textBoxSpecializationKode.TabIndex = 3;
+            textBoxSpecializationKode.Validating += textBoxSpecializationKode_Validating;
             // 
             // labelSpecializationKode
             // 
@@ -181,6 +188,7 @@
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(949, 33);
             textBoxName.TabIndex = 1;
+            textBoxName.Validating += textBoxName_Validating;
             // 
             // labelName
             // 
@@ -191,6 +199,10 @@
             labelName.Size = new Size(359, 25);
             labelName.TabIndex = 0;
             labelName.Text = "Сокращенное название специализации";
+            // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
             // 
             // FormAddGroup
             // 
@@ -203,6 +215,7 @@
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
             Name = "FormAddGroup";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAddGroup";
             panelBottom.ResumeLayout(false);
             panelBottom.PerformLayout();
@@ -210,6 +223,7 @@
             panelFill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownYearOfGraduation).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownYearOfAdmission).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
         }
 
@@ -229,5 +243,6 @@
         protected internal TextBox textBoxSpecializationName;
         protected internal NumericUpDown numericUpDownYearOfAdmission;
         protected internal NumericUpDown numericUpDownYearOfGraduation;
+        private ErrorProvider errorProvider;
     }
 }

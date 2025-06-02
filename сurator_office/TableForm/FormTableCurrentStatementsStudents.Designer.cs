@@ -1,6 +1,6 @@
-﻿namespace сurator_office
+﻿namespace сurator_office.TableForm
 {
-    partial class FormTableRolesInGroup
+    partial class FormTableCurrentStatementsStudents
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             buttonUpdate = new Button();
             buttonDelete = new Button();
             panelFill = new Panel();
-            dataGridViewRolesInGroup = new DataGridView();
+            dataGridViewCurrentStatementsStudents = new DataGridView();
             flowLayoutPanelTop.SuspendLayout();
             panelFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewRolesInGroup).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCurrentStatementsStudents).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanelTop
@@ -52,7 +52,7 @@
             flowLayoutPanelTop.Name = "flowLayoutPanelTop";
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(984, 61);
-            flowLayoutPanelTop.TabIndex = 2;
+            flowLayoutPanelTop.TabIndex = 3;
             // 
             // buttonAdd
             // 
@@ -63,7 +63,6 @@
             buttonAdd.TabIndex = 0;
             buttonAdd.Text = "Добавить";
             buttonAdd.UseVisualStyleBackColor = true;
-            buttonAdd.Click += ButtonAdd_Click;
             // 
             // buttonUpdate
             // 
@@ -74,7 +73,6 @@
             buttonUpdate.TabIndex = 1;
             buttonUpdate.Text = "Изменить";
             buttonUpdate.UseVisualStyleBackColor = true;
-            buttonUpdate.Click += buttonUpdate_Click;
             // 
             // buttonDelete
             // 
@@ -85,32 +83,31 @@
             buttonDelete.TabIndex = 2;
             buttonDelete.Text = "Удалить";
             buttonDelete.UseVisualStyleBackColor = true;
-            buttonDelete.Click += buttonDelete_Click;
             // 
             // panelFill
             // 
-            panelFill.Controls.Add(dataGridViewRolesInGroup);
+            panelFill.Controls.Add(dataGridViewCurrentStatementsStudents);
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 61);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
             panelFill.Size = new Size(984, 500);
-            panelFill.TabIndex = 3;
+            panelFill.TabIndex = 4;
             // 
-            // dataGridViewRolesInGroup
+            // dataGridViewCurrentStatementsStudents
             // 
-            dataGridViewRolesInGroup.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewRolesInGroup.BackgroundColor = Color.White;
-            dataGridViewRolesInGroup.Dock = DockStyle.Fill;
-            dataGridViewRolesInGroup.Location = new Point(10, 10);
-            dataGridViewRolesInGroup.MultiSelect = false;
-            dataGridViewRolesInGroup.Name = "dataGridViewRolesInGroup";
-            dataGridViewRolesInGroup.ReadOnly = true;
-            dataGridViewRolesInGroup.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewRolesInGroup.Size = new Size(964, 480);
-            dataGridViewRolesInGroup.TabIndex = 0;
+            dataGridViewCurrentStatementsStudents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewCurrentStatementsStudents.BackgroundColor = Color.White;
+            dataGridViewCurrentStatementsStudents.Dock = DockStyle.Fill;
+            dataGridViewCurrentStatementsStudents.Location = new Point(10, 10);
+            dataGridViewCurrentStatementsStudents.MultiSelect = false;
+            dataGridViewCurrentStatementsStudents.Name = "dataGridViewCurrentStatementsStudents";
+            dataGridViewCurrentStatementsStudents.ReadOnly = true;
+            dataGridViewCurrentStatementsStudents.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewCurrentStatementsStudents.Size = new Size(964, 480);
+            dataGridViewCurrentStatementsStudents.TabIndex = 0;
             // 
-            // FormTableRolesInGroup
+            // FormTableCurrentStatementsStudents
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -120,12 +117,13 @@
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
-            Name = "FormTableRolesInGroup";
-            Text = "FormTableRolesInGroup";
+            Name = "FormTableCurrentStatementsStudents";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormTableCurrentStatementsStudents";
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             panelFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewRolesInGroup).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCurrentStatementsStudents).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,6 +135,6 @@
         private Button buttonUpdate;
         private Button buttonDelete;
         private Panel panelFill;
-        private DataGridView dataGridViewRolesInGroup;
+        private DataGridView dataGridViewCurrentStatementsStudents;
     }
 }

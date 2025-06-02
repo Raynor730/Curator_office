@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panelBottom = new Panel();
             buttonCancel = new Button();
             buttonSave = new Button();
@@ -54,11 +55,13 @@
             labelName = new Label();
             textBoxSurname = new TextBox();
             labelSurname = new Label();
+            errorProvider = new ErrorProvider(components);
             panelBottom.SuspendLayout();
             panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoleInGroup).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownGroup).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownSubgroup).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).BeginInit();
             SuspendLayout();
             // 
             // panelBottom
@@ -298,6 +301,7 @@
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(664, 33);
             textBoxName.TabIndex = 3;
+            textBoxName.Validating += TextBoxName_Validating;
             // 
             // labelName
             // 
@@ -316,6 +320,7 @@
             textBoxSurname.Name = "textBoxSurname";
             textBoxSurname.Size = new Size(664, 33);
             textBoxSurname.TabIndex = 1;
+            textBoxSurname.Validating += TextBoxSurname_Validating;
             // 
             // labelSurname
             // 
@@ -326,6 +331,10 @@
             labelSurname.Size = new Size(99, 25);
             labelSurname.TabIndex = 0;
             labelSurname.Text = "Фамилия*";
+            // 
+            // errorProvider
+            // 
+            errorProvider.ContainerControl = this;
             // 
             // FormAddStudent
             // 
@@ -347,6 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDownRoleInGroup).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownGroup).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownSubgroup).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider).EndInit();
             ResumeLayout(false);
         }
 
@@ -382,5 +392,6 @@
         protected internal TextBox textBoxPhoneNumber;
         protected internal CheckBox checkBoxFullAge;
         protected internal CheckBox checkBoxExcluded;
+        private ErrorProvider errorProvider;
     }
 }

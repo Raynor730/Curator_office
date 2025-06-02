@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace сurator_office
+namespace сurator_office.AddForm
 {
-    public partial class FormAddGroup : Form
+    public partial class FormAddInterimStatement : Form
     {
-        public FormAddGroup()
+        public FormAddInterimStatement()
         {
             InitializeComponent();
         }

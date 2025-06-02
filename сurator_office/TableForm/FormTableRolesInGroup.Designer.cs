@@ -1,6 +1,6 @@
 ﻿namespace сurator_office
 {
-    partial class FormTableTeachers
+    partial class FormTableRolesInGroup
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             buttonUpdate = new Button();
             buttonDelete = new Button();
             panelFill = new Panel();
-            dataGridViewTeachers = new DataGridView();
+            dataGridViewRolesInGroup = new DataGridView();
             flowLayoutPanelTop.SuspendLayout();
             panelFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewTeachers).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewRolesInGroup).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanelTop
@@ -52,7 +52,7 @@
             flowLayoutPanelTop.Name = "flowLayoutPanelTop";
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(984, 61);
-            flowLayoutPanelTop.TabIndex = 1;
+            flowLayoutPanelTop.TabIndex = 2;
             // 
             // buttonAdd
             // 
@@ -74,7 +74,7 @@
             buttonUpdate.TabIndex = 1;
             buttonUpdate.Text = "Изменить";
             buttonUpdate.UseVisualStyleBackColor = true;
-            buttonUpdate.Click += ButtonUpdate_Click;
+            buttonUpdate.Click += buttonUpdate_Click;
             // 
             // buttonDelete
             // 
@@ -85,32 +85,32 @@
             buttonDelete.TabIndex = 2;
             buttonDelete.Text = "Удалить";
             buttonDelete.UseVisualStyleBackColor = true;
-            buttonDelete.Click += ButtonDelete_Click;
+            buttonDelete.Click += buttonDelete_Click;
             // 
             // panelFill
             // 
-            panelFill.Controls.Add(dataGridViewTeachers);
+            panelFill.Controls.Add(dataGridViewRolesInGroup);
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 61);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
             panelFill.Size = new Size(984, 500);
-            panelFill.TabIndex = 2;
+            panelFill.TabIndex = 3;
             // 
-            // dataGridViewTeachers
+            // dataGridViewRolesInGroup
             // 
-            dataGridViewTeachers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewTeachers.BackgroundColor = Color.White;
-            dataGridViewTeachers.Dock = DockStyle.Fill;
-            dataGridViewTeachers.Location = new Point(10, 10);
-            dataGridViewTeachers.MultiSelect = false;
-            dataGridViewTeachers.Name = "dataGridViewTeachers";
-            dataGridViewTeachers.ReadOnly = true;
-            dataGridViewTeachers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewTeachers.Size = new Size(964, 480);
-            dataGridViewTeachers.TabIndex = 0;
+            dataGridViewRolesInGroup.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewRolesInGroup.BackgroundColor = Color.White;
+            dataGridViewRolesInGroup.Dock = DockStyle.Fill;
+            dataGridViewRolesInGroup.Location = new Point(10, 10);
+            dataGridViewRolesInGroup.MultiSelect = false;
+            dataGridViewRolesInGroup.Name = "dataGridViewRolesInGroup";
+            dataGridViewRolesInGroup.ReadOnly = true;
+            dataGridViewRolesInGroup.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewRolesInGroup.Size = new Size(964, 480);
+            dataGridViewRolesInGroup.TabIndex = 0;
             // 
-            // FormTableTeachers
+            // FormTableRolesInGroup
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -120,12 +120,13 @@
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
-            Name = "FormTableTeachers";
-            Text = "FormTableTeachers";
+            Name = "FormTableRolesInGroup";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormTableRolesInGroup";
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             panelFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewTeachers).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewRolesInGroup).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,6 +138,6 @@
         private Button buttonUpdate;
         private Button buttonDelete;
         private Panel panelFill;
-        private DataGridView dataGridViewTeachers;
+        private DataGridView dataGridViewRolesInGroup;
     }
 }

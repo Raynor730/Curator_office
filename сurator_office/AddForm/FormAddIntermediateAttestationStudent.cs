@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace сurator_office
+namespace сurator_office.AddForm
 {
-    public partial class FormAddStudent : Form
+    public partial class FormAddIntermediateAttestationStudent : Form
     {
-        public FormAddStudent()
+        public FormAddIntermediateAttestationStudent()
         {
             InitializeComponent();
-        }
-
-        private void numericUpDownRoleInGroup_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

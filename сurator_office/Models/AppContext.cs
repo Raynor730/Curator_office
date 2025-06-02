@@ -27,7 +27,7 @@ public partial class AppContext : DbContext
 
     public virtual DbSet<InterimStatement> InterimStatements { get; set; }
 
-    public virtual DbSet<IntermediateAttestationStudetn> IntermediateAttestationStudetns { get; set; }
+    public virtual DbSet<IntermediateAttestationStudent> IntermediateAttestationStudetns { get; set; }
 
     public virtual DbSet<RolesInGroup> RolesInGroups { get; set; }
 
@@ -168,7 +168,7 @@ public partial class AppContext : DbContext
                 .HasConstraintName("interim_statement_id_type_intermediate_attestation_fkey");
         });
 
-        modelBuilder.Entity<IntermediateAttestationStudetn>(entity =>
+        modelBuilder.Entity<IntermediateAttestationStudent>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("intermediate_attestation_studetns_pkey");
 

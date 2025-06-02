@@ -1,6 +1,6 @@
 ﻿namespace сurator_office
 {
-    partial class FormTableGroups
+    partial class FormTableTeachers
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             buttonUpdate = new Button();
             buttonDelete = new Button();
             panelFill = new Panel();
-            dataGridViewGroups = new DataGridView();
+            dataGridViewTeachers = new DataGridView();
             flowLayoutPanelTop.SuspendLayout();
             panelFill.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewGroups).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTeachers).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanelTop
@@ -52,7 +52,7 @@
             flowLayoutPanelTop.Name = "flowLayoutPanelTop";
             flowLayoutPanelTop.Padding = new Padding(10);
             flowLayoutPanelTop.Size = new Size(984, 61);
-            flowLayoutPanelTop.TabIndex = 2;
+            flowLayoutPanelTop.TabIndex = 1;
             // 
             // buttonAdd
             // 
@@ -63,7 +63,7 @@
             buttonAdd.TabIndex = 0;
             buttonAdd.Text = "Добавить";
             buttonAdd.UseVisualStyleBackColor = true;
-            buttonAdd.Click += buttonAdd_Click;
+            buttonAdd.Click += ButtonAdd_Click;
             // 
             // buttonUpdate
             // 
@@ -74,7 +74,7 @@
             buttonUpdate.TabIndex = 1;
             buttonUpdate.Text = "Изменить";
             buttonUpdate.UseVisualStyleBackColor = true;
-            buttonUpdate.Click += buttonUpdate_Click;
+            buttonUpdate.Click += ButtonUpdate_Click;
             // 
             // buttonDelete
             // 
@@ -85,32 +85,32 @@
             buttonDelete.TabIndex = 2;
             buttonDelete.Text = "Удалить";
             buttonDelete.UseVisualStyleBackColor = true;
-            buttonDelete.Click += buttonDelete_Click;
+            buttonDelete.Click += ButtonDelete_Click;
             // 
             // panelFill
             // 
-            panelFill.Controls.Add(dataGridViewGroups);
+            panelFill.Controls.Add(dataGridViewTeachers);
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(0, 61);
             panelFill.Name = "panelFill";
             panelFill.Padding = new Padding(10);
             panelFill.Size = new Size(984, 500);
-            panelFill.TabIndex = 3;
+            panelFill.TabIndex = 2;
             // 
-            // dataGridViewGroups
+            // dataGridViewTeachers
             // 
-            dataGridViewGroups.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            dataGridViewGroups.BackgroundColor = Color.White;
-            dataGridViewGroups.Dock = DockStyle.Fill;
-            dataGridViewGroups.Location = new Point(10, 10);
-            dataGridViewGroups.MultiSelect = false;
-            dataGridViewGroups.Name = "dataGridViewGroups";
-            dataGridViewGroups.ReadOnly = true;
-            dataGridViewGroups.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewGroups.Size = new Size(964, 480);
-            dataGridViewGroups.TabIndex = 0;
+            dataGridViewTeachers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridViewTeachers.BackgroundColor = Color.White;
+            dataGridViewTeachers.Dock = DockStyle.Fill;
+            dataGridViewTeachers.Location = new Point(10, 10);
+            dataGridViewTeachers.MultiSelect = false;
+            dataGridViewTeachers.Name = "dataGridViewTeachers";
+            dataGridViewTeachers.ReadOnly = true;
+            dataGridViewTeachers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridViewTeachers.Size = new Size(964, 480);
+            dataGridViewTeachers.TabIndex = 0;
             // 
-            // FormTableGroups
+            // FormTableTeachers
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -120,12 +120,13 @@
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
-            Name = "FormTableGroups";
-            Text = "FormTableGroups";
+            Name = "FormTableTeachers";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormTableTeachers";
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
             panelFill.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewGroups).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTeachers).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,6 +138,6 @@
         private Button buttonUpdate;
         private Button buttonDelete;
         private Panel panelFill;
-        private DataGridView dataGridViewGroups;
+        private DataGridView dataGridViewTeachers;
     }
 }
